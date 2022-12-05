@@ -13,17 +13,18 @@ class Program
         numA = Convert.ToDouble(Console.ReadLine());
         Console.Write("Enter another number: ");
         numB = Convert.ToDouble(Console.ReadLine());
-        double product = 0; 
+        double product = 0;
         double counter = 0;
-        while ( counter < Math.Abs(numB)) 
-        {   counter++;
-            product = product + Math.Abs(numA);
+        while (counter < Math.Abs(numB))
+        {   
+        counter++;
+        product = product + Math.Abs(numA);
         }
-        if ((numA < 0 && numB > 0) || (numB < 0 && numA > 0) )
-        Console.WriteLine("-" + product);
+        if ((numA < 0 && numB > 0) || (numB < 0 && numA > 0))
+            Console.WriteLine("-" + product);
         else
-        Console.WriteLine(product);
-        Console.WriteLine("");
-        Console.Write("/Done");
+            Console.WriteLine(product);
+            Console.WriteLine("");
+            Console.Write("/Done");
     }
 }
