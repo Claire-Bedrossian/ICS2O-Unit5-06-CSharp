@@ -20,12 +20,14 @@ class Program
             counter++;
             product = product + Math.Abs(numA);
         }
-        if ((numA < 0 && numB > 0) || (numB < 0 && numA > 0)){
+        if ((numA < 0 && numB > 0) || (numB < 0 && numA > 0)) {
             Console.WriteLine("-" + product);
         }
-        else {
+        else
+        {
             Console.WriteLine(product);
         }
         Console.WriteLine("");
         Console.Write("/Done");
+    }
 }
