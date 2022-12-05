@@ -1,7 +1,7 @@
 using System;
 class Program
 {
-    public staticvoid Main(string[] args)
+    public static void Main(string[] args)
     {
         System.Random random = new System.Random();
         // This function accepts user input
@@ -17,14 +17,15 @@ class Program
         double counter = 0;
         while (counter < Math.Abs(numB))
         {
-        counter++;
-        product = product + Math.Abs(numA);
+            counter++;
+            product = product + Math.Abs(numA);
         }
-        if ((numA < 0 && numB > 0) || (numB < 0 && numA > 0))
-        Console.WriteLine("-" + product);
-        else
-        Console.WriteLine(product);
+        if ((numA < 0 && numB > 0) || (numB < 0 && numA > 0)){
+            Console.WriteLine("-" + product);
+        }
+        else {
+            Console.WriteLine(product);
+        }
         Console.WriteLine("");
         Console.Write("/Done");
-    }
 }
