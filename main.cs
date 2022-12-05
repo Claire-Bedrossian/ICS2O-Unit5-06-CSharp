@@ -16,15 +16,15 @@ class Program
         double product = 0;
         double counter = 0;
         while (counter < Math.Abs(numB))
-        {   
+        {
         counter++;
         product = product + Math.Abs(numA);
         }
         if ((numA < 0 && numB > 0) || (numB < 0 && numA > 0))
-            Console.WriteLine("-" + product);
+        Console.WriteLine("-" + product);
         else
-            Console.WriteLine(product);
-            Console.WriteLine("");
-            Console.Write("/Done");
+        Console.WriteLine(product);
+        Console.WriteLine("");
+        Console.Write("/Done");
     }
 }
